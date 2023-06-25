@@ -3,27 +3,27 @@
   "version": "1.0.0",
   "private": true,
   "devDependencies": {
-    "@htmlacademy/editorconfig-cli": "1.0.0",
-    "autoprefixer": "10.4.13",
-    "browser-sync": "2.27.10",
-    "del": "7.0.0",
-    "gulp": "4.0.2",
-    "gulp-html-bemlinter": "2.1.2",
-    "gulp-if": "3.0.0",
-    "gulp-less": "5.0.0",
-    "gulp-libsquoosh": "1.1.2",
-    "gulp-plumber": "1.2.1",
-    "gulp-postcss": "9.0.1",
+    "@htmlacademy/editorconfig-cli": "^1.0.0",
+    "autoprefixer": "^10.4.13",
+    "browser-sync": "^2.27.10",
+    "del": "^7.0.0",
+    "gulp": "^4.0.2",
+    "gulp-html-bemlinter": "^2.1.2",
+    "gulp-if": "^3.0.0",
+    "gulp-less": "^5.0.0",
+    "gulp-libsquoosh": "^1.1.2",
+    "gulp-plumber": "^1.2.1",
+    "gulp-postcss": "^9.0.1",
     "gulp-stacksvg": "1.0.6",
-    "gulp-svgmin": "4.1.0",
-    "gulp-terser": "2.1.0",
-    "gulp-w3c-html-validator": "5.1.3",
-    "postcss": "8.4.19",
-    "postcss-csso": "6.0.1",
-    "postcss-less": "6.0.0",
-    "postcss-url": "10.1.3",
-    "stylelint": "14.15.0",
-    "stylelint-config-htmlacademy": "1.1.2"
+    "gulp-svgmin": "^4.1.0",
+    "gulp-terser": "^2.1.0",
+    "gulp-w3c-html-validator": "^5.1.3",
+    "postcss": "^8.4.19",
+    "postcss-csso": "^6.0.1",
+    "postcss-less": "^6.0.0",
+    "postcss-url": "^10.1.3",
+    "stylelint": "^14.15.0",
+    "stylelint-config-htmlacademy": "^1.1.2"
   },
   "scripts": {
     "editorconfig": "editorconfig-cli",
@@ -52,5 +52,9 @@
   "engines": {
     "node": ">=16.13.0"
   },
-  "type": "module"
+  "type": "module",
+  "dependencies": {
+    "-": "^0.0.1",
+    "D": "^1.0.0"
+  }
 }
