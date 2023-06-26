@@ -1,0 +1,33 @@
+.header-nav {
+  width: auto;
+  margin: 0;
+}
+
+.header-nav--rigth {
+  display: flex;
+  margin: 0;
+}
+
+.header-nav__wrapper {
+  width: 100%;
+  margin: 0;
+  position: relative;
+  display: flex;
+  gap: 80px;
+}
+
+.header-nav__logo {
+  display: block;
+  padding: 15px 10px 0 20px;
+}
+
+.header-nav__toggle {
+  width: 60px;
+  height: 60px;
+  border: none;
+  display: block;
+
+  @media (min-width: @tablet-width) {
+    display: none;
+  }
+}
