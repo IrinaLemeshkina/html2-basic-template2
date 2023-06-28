@@ -470,13 +470,18 @@
         <div class="pagination">
           <div class="pagination__wrapper">
             <a class="pagination-link" href="#">
-              <svg class="pagination__icon" width="10" height="6" aria-label="Иконка назад."></svg>
+              <svg class="pagination--icon">
+                <use xlink:href="#union"></use>
+              </svg>
+            </div>
             </a>
-            <a class="pagination-no-current" href="#">1</a>
-            <a class="pagination-current" href="#">2</a>
-            <a class="pagination-no-current" href="#">3</a>
-            <a class="pagination-link" href="#">
-              <svg class="pagination__icon" width="10" height="6" aria-label="Иконка вперед."></svg>
+            <a class="pagination-link pagination-no-current" href="#">1</a>
+            <a class="pagination-link pagination-current" href="#">2</a>
+            <a class="pagination-link pagination-no-current" href="#">3</a>
+            <a class="pagination-link pagination-link" href="#">
+              <svg class="pagination--icon" width="10" height="6" aria-label="Иконка вперед.">
+                <use xlink:href="#allong"></use>
+              </svg>
             </a>
           </div>
         </div>
