@@ -1,0 +1,67 @@
+
+.fieldset-radio {
+  appearance: none;
+  position: absolute;
+}
+
+.fieldset-radio:checked ~ .fieldset__text::after {
+  content: "";
+  display: block;
+  position: absolute;
+  border-radius: 50px;
+  background-color: #9070ec;
+  width: 16px;
+  height: 16px;
+  top: -1px;
+  left: -32px;
+}
+
+.fieldset-radio:checked ~ .fieldset__text::before {
+  content: "";
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  position: absolute;
+  width: 24px;
+  height: 24px;
+  top: -5px;
+  left: -36px;
+  border: 2px solid #9070ec;
+  background-color: #ffffff;
+  border-radius: 50%;
+}
+
+.fieldset-radio:focus ~ .fieldset__text::before {
+  background-color: #d5d5d5;
+}
+
+.fieldset-radio:hover ~ .fieldset__text::before {
+  background-color: #e5e5e5;
+}
+
+.fieldset-radio ~ .fieldset__text::before {
+  content: "";
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  position: absolute;
+  width: 24px;
+  height: 24px;
+  top: 0px;
+  left: -36px;
+  border: 2px solid #bdbdbd;
+  background-color: #ffffff;
+  border-radius: 50%;
+}
+
+.fieldset-radio ~ .fieldset__text::after {
+  content: "";
+  display: block;
+  position: absolute;
+  border-radius: 50px;
+  background-color: #ffffff;
+  width: 16px;
+  height: 16px;
+  top: 5px;
+  left: -32px;
+}
