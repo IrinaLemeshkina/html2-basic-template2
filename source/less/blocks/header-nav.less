@@ -14,6 +14,10 @@
   position: relative;
   display: flex;
   gap: 80px;
+
+  @media (min-width: @tablet-width) {
+    gap: 110px;
+  }
 }
 
 .header-nav__toggle {
@@ -21,7 +25,9 @@
   height: 60px;
   border: none;
   display: block;
+}
 
+.toogle {
   @media (min-width: @tablet-width) {
     display: none;
   }
@@ -34,4 +40,31 @@
   z-index: 2;
   display: block;
   padding: 15px 10px 0 20px;
+
+  @media (min-width: @tablet-width) {
+    width: 82px;
+    height: 36px;
+  }
+}
+
+.header-nav__icon {
+  height: 32px;
+  width: 36px;
+  margin: 0;
+  padding: 10px;
+  z-index: 2;
+
+  @media (max-width: @mobile-width-only) {
+    width: 82px;
+  }
+}
+
+.header-nav-menu {
+  display: none;
+
+  @media (min-width: @tablet-width) {
+    margin: 0;
+    padding: 15px 0;
+    display: flex;
+  }
 }

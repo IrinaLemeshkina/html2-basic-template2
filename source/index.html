@@ -122,22 +122,17 @@
       <nav class="header-nav header-nav--closed header-nav--nojs">
         <div class="header-nav__wrapper">
           <div class="header-nav__logo">
-            <a class="page-header__logo" href="#">
-              <img src="./img/logo.svg" alt="Лого бренда." width="32" height="36">
+            <a class="header-nav__icon" href="#">
+              <picture>
+                <source type="image/webp" media="(min-width: 1200px)" srcset="./img/footer/logo.webp">
+                <source type="image/webp" media="(min-width: 768px)" srcset="./img/header/logo.svg">
+                <source type="image/webp" srcset="./img/logo.svg">
+                <source media="(min-width: 1200px)" srcset="./img/footer/logo.webp">
+                <source media="(min-width: 768px)" srcset="./img/header/logo.svg" width="82" height="36">
+                <img src="./img/logo.svg" alt="Лого бренда.">
+              </picture>
             </a>
           </div>
-          <div class="header-nav header-nav--rigth">
-            <a class="header-nav__toggle" href="#">
-              <img src="./img/header/account.svg" alt="Авторизация." width="60" height="60">
-            </a>
-            <a class="header-nav__toggle" href="#">
-              <img src="./img/header/basket.svg" alt="Корзина." width="60" height="60">
-            </a>
-            <a class="header-nav__toggle" href="#">
-              <img src="./img/header/mobile-menu-button.svg" alt="Авторизация." width="60" height="60">
-            </a>
-          </div>
-
           <div class="header-nav-menu">
             <ul class="header-nav__list site-list">
               <li class="site-list__item">
@@ -156,10 +151,20 @@
               </li>
             </ul>
           </div>
-        </div>
+          <div class="header-nav header-nav--rigth">
+            <a class="header-nav__toggle" href="#">
+              <img src="./img/header/account.svg" alt="Авторизация." width="60" height="60">
+            </a>
+            <a class="header-nav__toggle" href="#">
+              <img src="./img/header/basket.svg" alt="Корзина." width="60" height="60">
+            </a>
+            <a class="header-nav__toggle toogle" href="#">
+              <img src="./img/header/mobile-menu-button.svg" alt="Авторизация." width="60" height="60">
+            </a>
+          </div>
       </nav>
-
     </header>
+
     <main class="main">
       <section class="slider">
         <h2 class="visually-hidden">Лучший интернет-магазин кофейных напитков в банках</h2>
@@ -181,7 +186,7 @@
             </a>
             <p class="coffee-photo__title">Декаф Флэт Уайт</p>
             <p class="coffee-photo__description">Свежесваренный кофе без кофеина из Эфиопии с натуральным фермерским
-              молоком — то, что <br>нужно для расслабления после тяжёлого рабочего дня</p>
+              молоком — то, что <span></span>нужно для расслабления после тяжёлого рабочего дня</p>
           </div>
           <div class="buy">
             <div class="buy__price">
@@ -204,8 +209,10 @@
                 <use xlink:href="#time"></use>
               </svg>
             </div>
-            <h4 class=" advantage-item__title">Скорость</h4>
-            <p class="advantage-item__description">Готовый напиток всегда под рукой — просто открой банку</p>
+            <div>
+              <h4 class=" advantage-item__title">Скорость</h4>
+              <p class="advantage-item__description">Готовый напиток всегда под рукой — просто открой банку</p>
+            </div>
           </li>
           <li class="advantage-item">
             <div class="advantage-item__icon">
@@ -213,9 +220,11 @@
                 <use xlink:href="#fit"></use>
               </svg>
             </div>
-            <h4 class="advantage-item__title">Удобство</h4>
-            <p class="advantage-item__description">Легко помещается и в карман,
-              и в маленькую сумочку</p>
+            <div>
+              <h4 class="advantage-item__title">Удобство</h4>
+              <p class="advantage-item__description">Легко помещается и в карман,
+                и в маленькую сумочку</p>
+            </div>
           </li>
           <li class="advantage-item">
             <div class="advantage-item__icon">
@@ -223,8 +232,10 @@
                 <use xlink:href="#energy"></use>
               </svg>
             </div>
-            <h4 class="advantage-item__title">Бодрость</h4>
-            <p class="advantage-item__description">Сбалансированная доза кофеина даст мощный заряд энергии</p>
+            <div>
+              <h4 class="advantage-item__title">Бодрость</h4>
+              <p class="advantage-item__description">Сбалансированная доза кофеина даст мощный заряд энергии</p>
+            </div>
           </li>
           <li class="advantage-item">
             <div class="advantage-item__icon">
@@ -232,9 +243,11 @@
                 <use xlink:href="#eco"></use>
               </svg>
             </div>
-            <h4 class="advantage-item__title">Экологичность</h4>
-            <p class="advantage-item__description">Вся упаковка сделана
-              из перерабатываемых материалов</p>
+            <div>
+              <h4 class="advantage-item__title">Экологичность</h4>
+              <p class="advantage-item__description">Вся упаковка сделана
+                из перерабатываемых материалов</p>
+            </div>
           </li>
         </ul>
       </section>

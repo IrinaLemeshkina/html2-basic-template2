@@ -7,6 +7,10 @@
   display: block;
   margin: 0;
   padding: 0 15px;
+
+  @media (min-width: @tablet-width) {
+    padding: 0 80px;
+  }
 }
 
 .coffee-photo__badge {
@@ -17,6 +21,11 @@
   line-height: 16px;
   text-align: center;
   margin: 0;
+
+  @media (min-width: @tablet-width) {
+    margin: 0;
+    padding-top: 50px;
+  }
 }
 
 .coffee-photo__title {
@@ -27,6 +36,12 @@
   color: #333333;
   margin: 0;
   padding: 10px 0;
+
+  @media (min-width: @tablet-width) {
+    font-size: 56px;
+    font-weight: 700;
+    line-height: 80px;
+  }
 }
 
 .coffee-photo__description {
@@ -36,25 +51,40 @@
   text-align: center;
   margin: 0;
   padding: 10px 0;
-}
 
-.coffee-photo__arrow svg {
-  width: 20px;
-  height: 20px;
-}
+  @media (min-width: @tablet-width) {
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 32px;
+    padding: 0 40px 25px;
 
-.coffee-photo__arrow--back svg {
-  position: relative;
-  top: -15px;
-  left: 0;
-}
-
-.coffee-photo__arrow--along svg {
-  position: relative;
-  top: -15px;
-  right: -250px;
+    span::after {
+      content: "\A";
+      white-space: normal;
+    }
+  }
 }
 
 .coffee-photo__arrow {
-  color: transparent;
+  width: 20px;
+  height: 20px;
+  text-decoration: none;
+}
+
+/*вариант больших top left плохой, но лучше пока не придумала*/
+.coffee-photo__arrow--back {
+  @media (min-width: @tablet-width) {
+    display: block;
+    position: relative;
+    top: 290px;
+  }
+}
+
+.coffee-photo__arrow--along {
+  @media (min-width: @tablet-width) {
+    display: block;
+    position: relative;
+    top: 270px;
+    left: 590px;
+  }
 }

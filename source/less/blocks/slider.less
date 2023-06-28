@@ -1,5 +1,10 @@
 .slider {
   background-color: #f3ebe1;
+
+  @media (min-width: @tablet-width) {
+    display: flex;
+    flex-direction: column-reverse;
+  }
 }
 
 .slider img {
@@ -7,4 +12,9 @@
   margin: 0 auto;
   object-fit: contain;
   width: 320px;
+  display: block;
+
+  @media (min-width: @tablet-width) {
+    min-width: 476px;
+  }
 }

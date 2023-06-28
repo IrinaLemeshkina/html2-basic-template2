@@ -2,6 +2,10 @@
   display: block;
   margin: 0;
   padding: 0 20px;
+
+  @media (min-width: @tablet-width) {
+    padding: 20px 0;
+  }
 }
 
 .advantage-list {
@@ -15,8 +19,10 @@
   min-height: 211px;
 
   @media (min-width: @tablet-width) {
+    margin: 0;
+    padding: 25px;
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-columns: 1fr 1fr;
     min-height: 256px;
   }
 }
@@ -24,6 +30,11 @@
 .advantage-item {
   margin: 0;
   padding-bottom: 15px;
+
+  @media (min-width: @tablet-width) {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+  }
 }
 
 .advantage-item__title {
@@ -33,6 +44,10 @@
   text-align: center;
   color: #333333;
   margin: 0;
+
+  @media (min-width: @tablet-width) {
+    text-align: start;
+  }
 }
 
 .advantage-item__description {
@@ -42,4 +57,8 @@
   text-align: center;
   color: #333333;
   margin: 0;
+
+  @media (min-width: @tablet-width) {
+    text-align: start;
+  }
 }

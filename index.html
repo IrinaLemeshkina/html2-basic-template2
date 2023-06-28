@@ -123,7 +123,14 @@
         <div class="header-nav__wrapper">
           <div class="header-nav__logo">
             <a class="page-header__logo" href="#">
-              <img src="./img/logo.svg" alt="Лого бренда." width="32" height="36">
+              <picture>
+                <source type="image/webp" media="(min-width: 1200px)" srcset="./img/footer/logo.webp">
+                <source type="image/webp" media="(min-width: 768px)" srcset="./img/footer/logo.webp">
+                <source type="image/webp" srcset="./img/logo.webp">
+                <source media="(min-width: 1200px)" srcset="./img/footer/logo.png">
+                <source media="(min-width: 768px)" srcset="./img/footer/logo.png">
+                <img src="./img/footer/logo.png" alt="Лого бренда." width="32" height="36">
+              </picture>
             </a>
           </div>
           <div class="header-nav header-nav--rigth">
