@@ -1,20 +1,31 @@
 .filter {
   padding: 0 20px;
   background-color: #f8f8f8;
+
+  @media (min-width: @desktop-width) {
+    padding-right: 0;
+    max-width: 320px;
+  }
 }
 
-.filter__wrapper {
+.filter__header {
   display: block;
   margin: 0;
 }
 
-.filter__price__wrapper {
+.filter-price__wrapper {
   display: flex;
   flex-direction: column;
+
+  @media (min-width: @tablet-width) {
+    margin: 0;
+    padding: 0;
+    padding-top: 15px;
+  }
 }
 
 .filter__price--text {
-  font-size: 16px;
+  font-size: 18px;
   font-weight: 600;
   line-height: 24px;
   text-align: left;
@@ -78,4 +89,17 @@
   top: 15px;
   background-color: #9070ec;
   border-radius: 2px;
+}
+
+/*разбила секию молоко и страны на две части а не в одной форме чтобы на планшете сверстать на гридах*/
+.filter-price {
+  @media (min-width: @tablet-width) {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+
+  @media (min-width: @desktop-width) {
+    display: flex;
+    flex-direction: column;
+  }
 }

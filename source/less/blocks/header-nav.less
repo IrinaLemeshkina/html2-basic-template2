@@ -1,11 +1,27 @@
 .header-nav {
   width: auto;
   margin: 0;
+
+  @media (min-width: @desktop-width) {
+    padding: 0;
+  }
 }
 
 .header-nav--rigth {
   display: flex;
   margin: 0;
+
+  @media (min-width: @desktop-width) {
+    gap: 60px;
+    padding-left: 40px;
+  }
+}
+
+.header-nav--left {
+  @media (min-width: @desktop-width) {
+    display: flex;
+    gap: 80px;
+  }
 }
 
 .header-nav__wrapper {
@@ -17,6 +33,10 @@
 
   @media (min-width: @tablet-width) {
     gap: 110px;
+  }
+
+  @media (min-width: @desktop-width) {
+    gap: 80px;
   }
 }
 
@@ -53,10 +73,6 @@
   margin: 0;
   padding: 10px;
   z-index: 2;
-
-  @media (max-width: @mobile-width-only) {
-    width: 82px;
-  }
 }
 
 .header-nav-menu {
@@ -68,3 +84,19 @@
     display: flex;
   }
 }
+
+.shop-name {
+  display: none;
+
+  @media (min-width: @desktop-width) {
+    display: block;
+    color: #333333;
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 16px;
+    text-align: left;
+    text-decoration: none;
+    padding: 5px 0 0 50px;
+  }
+}
+

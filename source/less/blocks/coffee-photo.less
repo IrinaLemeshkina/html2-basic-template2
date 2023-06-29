@@ -1,6 +1,10 @@
 .coffee-photo {
   display: flex;
   flex-direction: column;
+
+  @media (min-width: @desktop-width) {
+    min-width: 680px;
+  }
 }
 
 .coffee-photo__wrapper {
@@ -10,6 +14,10 @@
 
   @media (min-width: @tablet-width) {
     padding: 0 80px;
+  }
+
+  @media (min-width: @desktop-width) {
+    padding: 0 20px 0 80px;
   }
 }
 
@@ -21,10 +29,15 @@
   line-height: 16px;
   text-align: center;
   margin: 0;
+  position: relative;
 
   @media (min-width: @tablet-width) {
     margin: 0;
     padding-top: 50px;
+  }
+
+  @media (min-width: @desktop-width) {
+    text-align: left;
   }
 }
 
@@ -41,6 +54,11 @@
     font-size: 56px;
     font-weight: 700;
     line-height: 80px;
+    padding: 0;
+  }
+
+  @media (min-width: @desktop-width) {
+    text-align: left;
   }
 }
 
@@ -50,7 +68,12 @@
   line-height: 20px;
   text-align: center;
   margin: 0;
-  padding: 10px 0;
+  padding: 10px 30px;
+
+  br::after {
+    content: "\A";
+    white-space: break-spaces;
+  }
 
   @media (min-width: @tablet-width) {
     font-size: 20px;
@@ -60,8 +83,13 @@
 
     span::after {
       content: "\A";
-      white-space: normal;
+      white-space: break-spaces;
     }
+  }
+
+  @media (min-width: @desktop-width) {
+    text-align: left;
+    padding-left: 0;
   }
 }
 
@@ -71,20 +99,34 @@
   text-decoration: none;
 }
 
-/*вариант больших top left плохой, но лучше пока не придумала*/
 .coffee-photo__arrow--back {
+  position: absolute;
+  left: 20px;
+
   @media (min-width: @tablet-width) {
     display: block;
     position: relative;
-    top: 290px;
+    top: -40px;
+  }
+
+  @media (min-width: @desktop-width) {
+    left: -450px;
+    top: -250px;
   }
 }
 
 .coffee-photo__arrow--along {
+  position: absolute;
+  right: 20px;
+
   @media (min-width: @tablet-width) {
     display: block;
     position: relative;
-    top: 270px;
-    left: 590px;
+    top: -40px;
+  }
+
+  @media (min-width: @desktop-width) {
+    left: 780px;
+    top: -260px;
   }
 }

@@ -2,8 +2,11 @@
   background-color: #f3ebe1;
 
   @media (min-width: @tablet-width) {
+    height: 568px;
+  }
+
+  @media (min-width: @desktop-width) {
     display: flex;
-    flex-direction: column-reverse;
   }
 }
 
@@ -16,5 +19,26 @@
 
   @media (min-width: @tablet-width) {
     min-width: 476px;
+    height: 476px;
+    position: absolute;
+    bottom: 0;
+    left: 120px;
+  }
+
+  @media (min-width: @desktop-width) {
+    position: relative;
+    left: 30px;
+    top: 30px;
+  }
+}
+
+.slider-steps {
+  display: none;
+
+  @media (min-width: @desktop-width) {
+    display: block;
+    position: relative;
+    top: 500px;
+    left: -650px;
   }
 }
