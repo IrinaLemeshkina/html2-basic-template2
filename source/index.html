@@ -107,10 +107,10 @@
         fill="#BDBDBD" />
     </symbol>
     <symbol width="202" height="24" viewBox="0 0 202 24" fill="none" id="slider-steps">
-      <rect y="10" width="62" height="4" fill="#7859CF"/>
-      <rect x="70" y="10" width="62" height="4" fill="white"/>
-      <rect x="140" y="10" width="62" height="4" fill="white"/>
-      </symbol>
+      <rect y="10" width="62" height="4" fill="#7859CF" />
+      <rect x="70" y="10" width="62" height="4" fill="white" />
+      <rect x="140" y="10" width="62" height="4" fill="white" />
+    </symbol>
   </svg>
 
   <div class="page-container">
@@ -133,6 +133,10 @@
             <p class="shop-name">Интернет-магазин<br>
               кофейных напитков</p>
           </div>
+          <button class="header-nav__toggle" href="#">
+            <span class="visually-hidden">Развернуть меню</span>
+          </button>
+
           <div class="header-nav-menu">
             <ul class="header-nav__list site-list">
               <li class="site-list__item">
@@ -144,7 +148,7 @@
                   Каталог</a>
               </li>
               <li class="site-list__item">
-                <a class="site-list__link" href="form.html">Доставкa</a>
+                <a class="site-list__link" href="#">Доставкa</a>
               </li>
               <li class="site-list__item">
                 <a class="site-list__link" href="#">О нас</a>
@@ -152,8 +156,8 @@
             </ul>
           </div>
 
-          <div class="header-nav header-nav--rigth">
-            <a class="header-nav__toggle" href="#">
+          <div class="header-nav--rigth">
+            <a class="header-nav__button" href="#">
               <picture>
                 <source type="image/webp" media="(min-width: 1200px)" srcset="./img/header/account-desctop.webp">
                 <source type="image/webp" media="(min-width: 768px)" srcset="./img/header/account.svg">
@@ -163,16 +167,13 @@
                 <img src="./img/header/account.svg" alt="Авторизация.">
               </picture>
             </a>
-            <a class="header-nav__toggle" href="#">
+            <a class="header-nav__button" href="#">
               <picture>
                 <source type="image/webp" media="(min-width: 1200px)" srcset="./img/header/basket-desctop.webp">
                 <source media="(min-width: 1200px)" srcset="./img/header/account-desctop.png">
                 <source media="(min-width: 768px)" srcset="./img/header/basket.svg">
                 <img src="./img/header/basket.svg" alt="Корзина.">
               </picture>
-            </a>
-            <a class="header-nav__toggle toogle" href="#">
-              <img src="./img/header/mobile-menu-button.svg" alt="Авторизация." width="60" height="60">
             </a>
           </div>
 
@@ -190,8 +191,9 @@
           <div class="coffee-photo__wrapper">
             <h3 class="coffee-photo__badge point">Новинка!</h3>
             <p class="coffee-photo__title">Декаф Флэт Уайт</p>
-            <p class="coffee-photo__description">Свежесваренный кофе без кофеина из Эфиопии <span></span>с натуральным фермерским
-              молоком — то, что нужно <span></span>для расслабления после тяжёлого рабочего дня</p>
+            <p class="coffee-photo__description">Свежесваренный кофе без кофеина из Эфиопии <span></span>с натуральным
+              фермерским
+              молоком — то, что нужно для расслабления после тяжёлого рабочего дня</p>
           </div>
           <div class="buy">
             <div class="buy__price">
@@ -255,7 +257,8 @@
             </div>
             <div>
               <h4 class="advantage-item__title">Бодрость</h4>
-              <p class="advantage-item__description">Сбалансированная доза кофеина <span></span>даст мощный заряд энергии</p>
+              <p class="advantage-item__description">Сбалансированная доза кофеина <span></span>даст мощный заряд
+                энергии</p>
             </div>
           </li>
           <li class="advantage-item">
@@ -339,34 +342,34 @@
                 <fieldset class="form-for-choose fieldset">
                   <h5 class="fieldset__title">Страна произрастания</h5>
                   <ul class="fieldset__list">
-                    <li class="fieldset__item fieldset__item--choice">
+                    <li class="fieldset__item fieldset__item--country">
                       <label class="fieldset__label fieldset__label--choice">
-                        <input class="fieldset-radio" type="radio" name="country" checked required tabindex="1">
-                        <span class="fieldset__text">Бразилия</span>
+                        <input class="fieldset-radio--country" type="radio" name="country" checked required tabindex="1">
+                        <span class="fieldset__country-text">Бразилия</span>
                       </label>
                     </li>
-                    <li class="fieldset__item fieldset__item--choice">
+                    <li class="fieldset__item fieldset__item--country">
                       <label class="fieldset__label fieldset__label--choice">
-                        <input class="fieldset-radio" type="radio" name="country" required tabindex="1">
-                        <span class="fieldset__text">Эфиопия</span>
+                        <input class="fieldset-radio--country" type="radio" name="country" required tabindex="1">
+                        <span class="fieldset__country-text">Эфиопия</span>
                       </label>
                     </li>
-                    <li class="fieldset__item fieldset__item--choice">
+                    <li class="fieldset__item fieldset__item--country">
                       <label class="fieldset__label fieldset__label--choice">
-                        <input class="fieldset-radio" type="radio" name="country" required tabindex="1">
-                        <span class="fieldset__text">Колумбия</span>
+                        <input class="fieldset-radio--country" type="radio" name="country" required tabindex="1">
+                        <span class="fieldset__country-text">Колумбия</span>
                       </label>
                     </li>
-                    <li class="fieldset__item fieldset__item--choice">
+                    <li class="fieldset__item fieldset__item--country">
                       <label class="fieldset__label fieldset__label--choice">
-                        <input class="fieldset-radio" type="radio" name="country" required tabindex="1">
-                        <span class="fieldset__text">Коста-Рика</span>
+                        <input class="fieldset-radio--country" type="radio" name="country" required tabindex="1">
+                        <span class="fieldset__country-text">Коста-Рика</span>
                       </label>
                     </li>
-                    <li class="fieldset__item fieldset__item--choice">
+                    <li class="fieldset__item fieldset__item--country">
                       <label class="fieldset__label fieldset__label--choice">
-                        <input class="fieldset-radio" type="radio" name="country" required tabindex="1">
-                        <span class="fieldset__text">Перу</span>
+                        <input class="fieldset-radio--country" type="radio" name="country" required tabindex="1">
+                        <span class="fieldset__country-text">Перу</span>
                       </label>
                     </li>
                   </ul>
@@ -614,125 +617,125 @@
   </div>
   <footer class="footer">
     <div class="footer__wrapper">
-    <div class="footer-social">
-      <a class="footer-logo">
-        <picture>
-          <source type="image/webp" media="(min-width: 1200px)" srcset="./img/footer/logo.webp">
-          <source type="image/webp" media="(min-width: 768px)" srcset="./img/footer/logo.webp">
-          <source type="image/webp" srcset="./img/header/logo.svg">
-          <source media="(min-width: 1200px)" srcset="./img/footer/logo.png">
-          <source media="(min-width: 768px)" srcset="./img/footer/logo.png">
-          <img src="./img/header/logo.svg" alt="Лого компании.">
-        </picture>
-        <p class="footer__shop-name">Интернет-магазин
-          кофейных напитков</p>
-      </a>
-      <div class="social--network social">
-        <b class="social__title visually-hidden">Ищите нас в соцсетях</b>
-        <ul class="social__list">
-          <li class="social__item">
-            <a class="social__link social__link--vkontakte" href="https://vk.com/htmlacademy">
-              <svg class="social__link__icon" width="20" height="20" aria-label="Иконка группы Вконтакте.">
-                <use xlink:href="#vk"></use>
-              </svg>
-              <span class="visually-hidden">Мы в Вконтакте</span>
-            </a>
-          </li>
-          <li class="social__item">
-            <a class="social__link social__link--pinterest" href="#">
-              <svg class="social__link__icon" width="20" height="20" aria-label="Иконка группы в Пинтерест.">
-                <use xlink:href="#pinterest"></use>
-              </svg>
-              <span class="visually-hidden">Мы в Пинтересте</span>
-            </a>
-          </li>
-          <li class="social__item">
-            <a class="social__link social__link--ok" href="#">
-              <svg class="social__link__icon" width="20" height="20" aria-label="Иконка группы в одноклассниках.">
-                <use xlink:href="#ok"></use>
-              </svg>
-              <span class="visually-hidden">Мы в Одноклассниках</span>
-            </a>
-          </li>
-        </ul>
+      <div class="footer-social">
+        <a class="footer-logo">
+          <picture>
+            <source type="image/webp" media="(min-width: 1200px)" srcset="./img/footer/logo.webp">
+            <source type="image/webp" media="(min-width: 768px)" srcset="./img/footer/logo.webp">
+            <source type="image/webp" srcset="./img/header/logo.svg">
+            <source media="(min-width: 1200px)" srcset="./img/footer/logo.png">
+            <source media="(min-width: 768px)" srcset="./img/footer/logo.png">
+            <img src="./img/header/logo.svg" alt="Лого компании.">
+          </picture>
+          <p class="footer__shop-name">Интернет-магазин
+            кофейных напитков</p>
+        </a>
+        <div class="social--network social">
+          <b class="social__title visually-hidden">Ищите нас в соцсетях</b>
+          <ul class="social__list">
+            <li class="social__item">
+              <a class="social__link social__link--vkontakte" href="https://vk.com/htmlacademy">
+                <svg class="social__link__icon" width="20" height="20" aria-label="Иконка группы Вконтакте.">
+                  <use xlink:href="#vk"></use>
+                </svg>
+                <span class="visually-hidden">Мы в Вконтакте</span>
+              </a>
+            </li>
+            <li class="social__item">
+              <a class="social__link social__link--pinterest" href="#">
+                <svg class="social__link__icon" width="20" height="20" aria-label="Иконка группы в Пинтерест.">
+                  <use xlink:href="#pinterest"></use>
+                </svg>
+                <span class="visually-hidden">Мы в Пинтересте</span>
+              </a>
+            </li>
+            <li class="social__item">
+              <a class="social__link social__link--ok" href="#">
+                <svg class="social__link__icon" width="20" height="20" aria-label="Иконка группы в одноклассниках.">
+                  <use xlink:href="#ok"></use>
+                </svg>
+                <span class="visually-hidden">Мы в Одноклассниках</span>
+              </a>
+            </li>
+          </ul>
+        </div>
       </div>
-    </div>
-    <dl class="footer-navigation">
-      <div class="footer-point">
-        <dt class="footer-navigation__list">
-          <a class="footer-navigation__link" href="#">
-            <span class="footer-navigation__point">Интернет-магазин</span>
-          </a>
-        </dt>
-        <dd class="footer-navigation__item">
-          <a class="footer-navigation__link" href="#">
-            <span class="footer-navigation__name">Каталог</span>
-          </a>
-        </dd>
-        <dd class="footer-navigation__item">
-          <a class="footer-navigation__link" href="#">
-            <span class="footer-navigation__name">Доставка</span>
-          </a>
-        </dd>
-        <dd class="footer-navigation__item">
-          <a class="footer-navigation__link" href="#">
-            <span class="footer-navigation__name">Способы оплаты</span>
-          </a>
-        </dd>
-        <dd class="footer-navigation__item">
-          <a class="footer-navigation__link" href="#">
-            <span class="footer-navigation__name">О нас</span>
-          </a>
-        </dd>
-      </div>
-      <div class="footer-point">
-        <dt class="footer-navigation__item">
-          <a class="footer-navigation__link" href="#">
-            <span class="footer-navigation__point">Медиа</span>
-          </a>
-        </dt>
-        <dd class="footer-navigation__item">
-          <a class="footer-navigation__link" href="#">
-            <span class="footer-navigation__name">Блог</span>
-          </a>
-        </dd>
-        <dd class="footer-navigation__item">
-          <a class="footer-navigation__link" href="#">
-            <span class="footer-navigation__name">Информация для СМИ</span>
-          </a>
-        </dd>
-        <dd class="footer-navigation__item">
-          <a class="footer-navigation__link" href="#">
-            <span class="footer-navigation__name">Правовая информация</span>
-          </a>
-        </dd>
-      </div>
-      <div class="footer-point">
-        <dt class="footer-navigation__item">
-          <a class="footer-navigation__link" href="#">
-            <span class="footer-navigation__point">Контакты</span>
-          </a>
-        </dt>
-        <dd class="footer-navigation__item">
-          <a class="footer-navigation__adress" href="#">
-            <svg width="20" height="20" aria-label="Наш адрес.">
-              <use xlink:href="#adress"></use>
-            </svg>
-            <span class="footer-navigation__name">Санкт-Петербург, набережная реки Карповки, дом 5</span>
-          </a>
-        </dd>
-        <dd class="footer-navigation__item">
-          <div class="footer-phone">
+      <dl class="footer-navigation">
+        <div class="footer-point">
+          <dt class="footer-navigation__list">
             <a class="footer-navigation__link" href="#">
-              <svg width="20" height="20" aria-label="Наш телефон.">
-                <use xlink:href="#phone"></use>
-              </svg>
-              <span class="footer-navigation__name">+7 (999) 999-99-99</span>
+              <span class="footer-navigation__point">Интернет-магазин</span>
             </a>
-          </div>
-        </dd>
-      </div>
-    </dl>
+          </dt>
+          <dd class="footer-navigation__item">
+            <a class="footer-navigation__link" href="#">
+              <span class="footer-navigation__name">Каталог</span>
+            </a>
+          </dd>
+          <dd class="footer-navigation__item">
+            <a class="footer-navigation__link" href="#">
+              <span class="footer-navigation__name">Доставка</span>
+            </a>
+          </dd>
+          <dd class="footer-navigation__item">
+            <a class="footer-navigation__link" href="#">
+              <span class="footer-navigation__name">Способы оплаты</span>
+            </a>
+          </dd>
+          <dd class="footer-navigation__item">
+            <a class="footer-navigation__link" href="#">
+              <span class="footer-navigation__name">О нас</span>
+            </a>
+          </dd>
+        </div>
+        <div class="footer-point">
+          <dt class="footer-navigation__item">
+            <a class="footer-navigation__link" href="#">
+              <span class="footer-navigation__point">Медиа</span>
+            </a>
+          </dt>
+          <dd class="footer-navigation__item">
+            <a class="footer-navigation__link" href="#">
+              <span class="footer-navigation__name">Блог</span>
+            </a>
+          </dd>
+          <dd class="footer-navigation__item">
+            <a class="footer-navigation__link" href="#">
+              <span class="footer-navigation__name">Информация для СМИ</span>
+            </a>
+          </dd>
+          <dd class="footer-navigation__item">
+            <a class="footer-navigation__link" href="#">
+              <span class="footer-navigation__name">Правовая информация</span>
+            </a>
+          </dd>
+        </div>
+        <div class="footer-point">
+          <dt class="footer-navigation__item">
+            <a class="footer-navigation__link" href="#">
+              <span class="footer-navigation__point">Контакты</span>
+            </a>
+          </dt>
+          <dd class="footer-navigation__item">
+            <a class="footer-navigation__adress" href="#">
+              <svg width="20" height="20" aria-label="Наш адрес.">
+                <use xlink:href="#adress"></use>
+              </svg>
+              <span class="footer-navigation__name">Санкт-Петербург, набережная реки Карповки, дом 5</span>
+            </a>
+          </dd>
+          <dd class="footer-navigation__item">
+            <div class="footer-phone">
+              <a class="footer-navigation__link" href="#">
+                <svg width="20" height="20" aria-label="Наш телефон.">
+                  <use xlink:href="#phone"></use>
+                </svg>
+                <span class="footer-navigation__name">+7 (999) 999-99-99</span>
+              </a>
+            </div>
+          </dd>
+        </div>
+      </dl>
     </div>
     <div class="footer__copyright copyright">
       <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive">
@@ -743,7 +746,7 @@
       </a>
     </div>
   </footer>
-
+  <script src="js/script.js"></script>
 </body>
 
 </html>

@@ -57,6 +57,16 @@
   }
 }
 
+.output-price--start:hover,
+.output-price--end:hover {
+  border: #9070ec;
+}
+
+.output-price--start:active,
+.output-price--end:active {
+  border: #593cac;
+}
+
 .range-toogle {
   &--min {
     position: relative;
@@ -91,7 +101,6 @@
   border-radius: 2px;
 }
 
-/*разбила секию молоко и страны на две части а не в одной форме чтобы на планшете сверстать на гридах*/
 .filter-price {
   @media (min-width: @tablet-width) {
     display: grid;

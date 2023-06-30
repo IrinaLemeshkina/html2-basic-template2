@@ -70,11 +70,6 @@
   margin: 0;
   padding: 10px 30px;
 
-  br::after {
-    content: "\A";
-    white-space: break-spaces;
-  }
-
   @media (min-width: @tablet-width) {
     font-size: 20px;
     font-weight: 400;
@@ -83,7 +78,7 @@
 
     span::after {
       content: "\A";
-      white-space: break-spaces;
+      white-space: pre;
     }
   }
 
